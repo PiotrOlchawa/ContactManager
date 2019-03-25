@@ -1,9 +1,7 @@
 package org.ContactManager;
 
-import javafx.print.Collation;
 import org.apache.log4j.Logger;
 
-import java.awt.*;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
@@ -111,7 +109,7 @@ public class MainMenu {
     }
 
     private void remove() {
-        try{
+        try {
             if (((AdressBook) contactSource).removeContact(Integer.valueOf(scanner.nextLine()))) {
                 selectMainMenuOption();
                 msg("Contact removed");
